@@ -3,7 +3,7 @@ const getAllJobs = (req, res) => {
 }
 
 const createJobs = (req, res) => {
-    res.json(req.user);
+    res.json(req.body);
 }
 
 const getJob = (req, res) => {
