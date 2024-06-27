@@ -41,6 +41,10 @@ app.use(cors());
 app.use(helmet());
 app.use(limiter);
 
+app.get("/", (req, res) => {
+  res.send("Hello Heroku app");
+});
+
 // routes
 app.use("/api/v1/user", authRoutes);
 app.use("/api/v1/jobs", jobRoutes);
