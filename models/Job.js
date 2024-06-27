@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema();
+const Schema = mongoose.Schema;
 
 const JobSchema = new Schema(
   {
@@ -23,7 +23,7 @@ const JobSchema = new Schema(
       ref: "User",
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
 const JobModel = mongoose.model("Job", JobSchema);
